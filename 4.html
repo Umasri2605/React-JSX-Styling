@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.5/babel.min.js"></script>
+    <style>
+      .abc{
+        padding:20px;
+        justify-content: space-evenly;
+        display: flex;
+      }
+      #d1{
+            height:17px;
+            width:50px;
+            border:2px solid;
+            padding:15px;
+            
+        }
+        #d2{
+            height:17px;
+            width: 30px;
+            border:2px solid;
+            padding:15px;
+        }
+        #d3{
+            height:17px;
+            width:30px;
+            border:2px solid;
+            padding:15px;
+            
+        }
+        #d4{
+            height:17px;
+            width:35px;
+            border:2px solid;
+            padding:15px;
+        }
+
+    </style>
+</head>
+<body>
+    <id id="d5"></id>
+   <script type="text/babel">
+ var ar=["Praveen","Ravi","Dasu","Kiran"];
+ var jsxs=<div className="abc">
+    <div id="d1">{ar[0]}</div>
+    <div id="d2">{ar[1]}</div>
+    <div id="d3">{ar[2]}</div>
+    <div id="d4">{ar[3]}</div>
+    </div>
+    ReactDOM.render(jsxs,document.getElementById("d5"))
+   </script> 
+</body>
+</html>

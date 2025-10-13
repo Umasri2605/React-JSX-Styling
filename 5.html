@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.5/babel.min.js"></script>
+    <style>
+   .abc{
+     height:150px;
+     width:500px;
+     padding:10px;
+     border:2px solid;
+     
+
+   }
+    </style>
+</head>
+<body>
+    <id id="d1"></id>
+    <script type="text/babel">
+      var obj={
+        Firstname:"Praveen",
+        Gender:"Male",
+        Age:42,
+      };   
+     var jsxd=<div className="abc">
+        <div><h1>Name:{obj.Firstname}</h1></div>
+        <div><h3>Gender:{obj.Gender}</h3></div>
+        <div><i>Age:{obj.Age}</i></div>
+        </div>
+        ReactDOM.render(jsxd,document.getElementById("d1"))
+    </script>
+</body>
+</html>

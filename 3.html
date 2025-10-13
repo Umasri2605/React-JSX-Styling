@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.5/babel.min.js"></script>
+    <style>
+        .abc{
+            display: flex;
+            justify-content: space-evenly;
+            padding:5px;
+    
+        }
+        #d1{
+            height:20px;
+            width:20px;
+            border:2px solid;
+            padding:15px;
+        }
+        #d2{
+            height:20px;
+            width: 20px;
+            border:2px solid;
+            padding:15px;
+        }
+        #d3{
+            height:20px;
+            width:20px;
+            border:2px solid;
+            padding:15px;
+        }
+        #d4{
+            height:20px;
+            width:20px;
+            border:2px solid;
+            padding:15px;
+        }
+        #d5{
+            height:20px;
+            width:20px;
+            border:2px solid;
+            padding:15px;
+       }
+       #d6{
+            height:20px;
+            width:20px;
+            border:2px solid;
+            padding:15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d7"></div>
+    <script type="text/babel">
+     var ar=[23,34,54,10,4,7];  
+     var jsxl=<div className="abc">
+        <div id="d1">{ar[0]}</div>
+        <div id="d2">{ar[1]}</div>
+        <div id="d3">{ar[2]}</div>
+        <div id="d4">{ar[3]}</div>
+        <div id="d5">{ar[4]}</div>
+        <div id="d6">{ar[5]}</div>
+        </div>
+        ReactDOM.render(jsxl,document.getElementById("d7"))
+    </script>
+</body>
+</html>

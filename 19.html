@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.5/babel.min.js"></script>
+</head>
+<body>
+    <id id="d1"></id>
+    <script type="text/babel">
+     var ar=[23,34,54,10,4,7,11];
+     var jsxl=<div>
+     {   
+    ar.map(function(a){
+
+            return (
+                <li style={a%2==0 ?{color:"green"}:{color:"red"}}>{a}</li>
+               )
+    
+    })
+}
+   </div>
+ReactDOM.render(jsxl,document.getElementById("d1"));  
+
+    </script>
+</body>
+</html>
