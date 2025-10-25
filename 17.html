@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apply green color if variable value is positive red for negative</title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.5/babel.min.js"></script>
@@ -11,6 +11,7 @@
 <body>
     <id id="d1"></id>
     <script type="text/babel">
+    // Apply green color if variable value is positive red for negative
     var a=+prompt();
       var jsxh1=<h1 style={a%2==0 ? {backgroundColor:"green"} : {backgroundColor:"red"}}>Entered Value Here:{a}</h1>
     // var jsxh1=<h1>Entered value Here:<span style={a>=0 ? {color:"green"} : {color:"red"}}>{a}</span></h1>
